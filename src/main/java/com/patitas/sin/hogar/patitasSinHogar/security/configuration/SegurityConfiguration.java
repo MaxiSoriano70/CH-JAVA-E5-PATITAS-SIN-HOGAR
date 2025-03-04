@@ -26,6 +26,7 @@ public class SegurityConfiguration {
                     auth.requestMatchers("/auth/**").permitAll();
                     auth.requestMatchers("/usuario/**").permitAll();
                     auth.requestMatchers("/mascota/**").permitAll();
+                    auth.requestMatchers("/adopcion/**").permitAll();
 
                     auth.anyRequest().authenticated();
                 })
