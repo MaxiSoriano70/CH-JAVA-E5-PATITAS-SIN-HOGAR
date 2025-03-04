@@ -32,11 +32,10 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.trearTodosUsuarios());
     }
     @GetMapping("/{id}")
-    public ResponseEntity<UsuarioDTO> buscarCategoriaPorId(@PathVariable Integer id){
+    public ResponseEntity<UsuarioDTO> buscarUsuarioPorId(@PathVariable Integer id){
         Optional<UsuarioDTO> usuarioDTO = usuarioService.buscarPorId(id);
         if(usuarioDTO.isPresent()){
-            UsuarioDTO usuarioDTOARetornar = usuarioDTO.get();
-            return ResponseEntity.ok(usuarioDTOARetornar);
+            return ResponseEntity.ok(usuarioDTO.get());
         }
         else{
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
@@ -62,5 +61,4 @@ public class UsuarioController {
             return new ResponseEntity<>("{\"message\": \"usuario no encontrada\"}", HttpStatus.NOT_FOUND);
         }
     }
-
 }

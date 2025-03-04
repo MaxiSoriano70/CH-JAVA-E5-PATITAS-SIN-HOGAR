@@ -24,7 +24,7 @@ public class Mascota {
     @Column(nullable = false)
     private String nombre;
     @Column(nullable = false)
-    private Integer edad;
+    private LocalDate fechaDeNacimiento;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private ESexo sexo;

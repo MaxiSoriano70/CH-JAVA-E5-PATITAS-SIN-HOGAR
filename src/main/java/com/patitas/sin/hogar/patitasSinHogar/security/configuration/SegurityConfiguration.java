@@ -25,6 +25,7 @@ public class SegurityConfiguration {
                     // Endpoints sin autenticación
                     auth.requestMatchers("/auth/**").permitAll();
                     auth.requestMatchers("/usuario/**").permitAll();
+                    auth.requestMatchers("/mascota/**").permitAll();
 
                     auth.anyRequest().authenticated();
                 })
