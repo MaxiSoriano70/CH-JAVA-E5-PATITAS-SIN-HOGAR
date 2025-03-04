@@ -1,6 +1,6 @@
 package com.patitas.sin.hogar.patitasSinHogar.utils;
 
-public enum ETipoUsuario {
+public enum ERol{
     ADMIN,
-    COMUN
+    USER
 }

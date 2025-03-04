@@ -1,5 +1,6 @@
 package com.patitas.sin.hogar.patitasSinHogar.entity;
 
+import com.patitas.sin.hogar.patitasSinHogar.security.entity.Usuario;
 import com.patitas.sin.hogar.patitasSinHogar.utils.EEspecie;
 import com.patitas.sin.hogar.patitasSinHogar.utils.EEstadoMascota;
 import com.patitas.sin.hogar.patitasSinHogar.utils.EEsterilizado;

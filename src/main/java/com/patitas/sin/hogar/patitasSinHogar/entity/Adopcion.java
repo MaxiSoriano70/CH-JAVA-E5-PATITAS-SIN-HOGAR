@@ -1,5 +1,6 @@
 package com.patitas.sin.hogar.patitasSinHogar.entity;
 
+import com.patitas.sin.hogar.patitasSinHogar.security.entity.Usuario;
 import jakarta.persistence.*;
 import lombok.*;
 
